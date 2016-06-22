@@ -1,0 +1,14 @@
+address_172:
+  street_details: 172 Willis Street 
+  suburb: 'Te Aro'
+  city: 'Wellington'
+  postcode: 6011
+  customer: one
+
+
+address_152:
+  street_details: 172 Willis Street 
+  suburb: 'Te Aro'
+  city: 'Wellington'
+  postcode: 6011
+  customer: two
