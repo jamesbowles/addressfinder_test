@@ -4,7 +4,7 @@ export RAILS_ENV=development
 bundle check || bundle install --jobs=10
 
 for ENV_NAME in development test; do
-  FILE=/portal/tmp/database_initialised_$ENV_NAME.txt
+  FILE=/app/tmp/database_initialised_$ENV_NAME.txt
   if [ ! -f "$FILE" ]; then
     echo "Creating and loading $ENV_NAME databases"
     RAILS_ENV=$ENV_NAME bundle exec rake db:create db:structure:load
