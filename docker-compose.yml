@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - bundle-cache:/bundle
+    command: bin/docker_web
+
+volumes:
+  bundle-cache: {}
