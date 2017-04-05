@@ -12,8 +12,8 @@ for ENV_NAME in development test; do
   fi
 done
 
-echo "Migrating and refreshing reference data"
-bundle exec rake db:migrate easy:reference_data:refresh
+echo "Migrating"
+bundle exec rake db:migrate
 RAILS_ENV=test bundle exec rake db:migrate
 
 rm -f tmp/pids/server.pid
